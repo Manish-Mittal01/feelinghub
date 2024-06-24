@@ -11,13 +11,20 @@ export default function Header() {
       <header className="headerContainer">
         <div className="header">
           <Link to="/" className="navbar-brand">
-            <img
-              src={
-                "https://www.creativefabrica.com/wp-content/uploads/2021/03/20/Mountain-logo-Design-Graphics-9785421-1-580x435.png"
-              }
-              alt="logo"
-              className="mainLogo img-fluid"
-            />
+            <div className="d-flex align-items-center">
+              <img
+                className="mainLogo img-fluid"
+                src={
+                  // "https://www.creativefabrica.com/wp-content/uploads/2021/03/20/Mountain-logo-Design-Graphics-9785421-1-580x435.png"
+                  "/appLogo.png"
+                }
+                alt="logo"
+              />
+              <div style={{ lineHeight: "15px" }}>
+                <p className="headerLogoName m-0">Feelinghub</p>
+                <p className="small muted m-0">Connect, Share, Empower</p>
+              </div>
+            </div>
           </Link>
 
           <div className="header-right">
